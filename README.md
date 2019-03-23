@@ -13,7 +13,8 @@ The changes allow the use of the character 'F' or 'f' in the SendDTMF() dialplan
 To use this capability from a phone (especially a SIP phone) all of the following must be true:
 1.  The ATA is capable of sending a hook flash to its FXO port
 2.  The ATA specifically supports RFC2833 or RFC4733 for receiving events and has documented using either one for receiving a hook flash event
-2.  The ATA configuration in sip.conf or pjsip.conf must set dtmfmode=rfc2833 or dtmfmode=rfc4733
-3.  A feature code in features.conf must be created to execute SendDTMF(F) and send the packet towards the ATA
+3.  The ATA configuration in sip.conf or pjsip.conf must set dtmfmode=rfc2833 or dtmfmode=rfc4733
+4.  A feature code in features.conf must be created to execute SendDTMF(F) and send the packet towards the ATA
     Example:  hookflash => ##,peer,SendDTMF,F
     
+ 
