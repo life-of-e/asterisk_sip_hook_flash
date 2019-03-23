@@ -1,4 +1,7 @@
 # asterisk_sip_hook_flash
+
+Tested with Asterisk 13 and Asterisk 16.  Recommended with Asterisk 16.
+
 Modifications to Asterisk PBX to support sending a hook flash (Event 16) to a SIP ATA with an FXO port using RFC2833 or RFC4733 signalling.  Initially created to support a Grandstream HT813 ATA.  May also support Grandstream HT503 and Linksys SPA3102.
 
 I created this simple patch because I needed to handle call waiting on my analog phone line (PSTN) connected to the FXO port of my Grandstream HT813 hybrid adapter.
